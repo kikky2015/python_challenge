@@ -57,6 +57,16 @@ folder_path = "C:\\Users\\HP\\Desktop\\Lessons_BootCamp\\wk3\\HW3\\python_challe
 file_name = "bank_data.txt"
 full_path = os.path.join(folder_path, file_name)
 
+# Print results analysis to terminal
+print()
+print("Financial Analysis")
+print("-------------------------------------")
+print(f"Total Months: {total_months}")
+print(f"Total: ${net_profits}")
+print(f"Average Change: ${average_change:.2f}")
+print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
+print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
+
 # Print results analysis to file
 with open(full_path, 'w') as file:
     file.write("Financial Analysis\n")
