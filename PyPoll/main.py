@@ -39,12 +39,12 @@ for candidate, votes in candidates.items():
     if votes > winner_votes:
         winner = candidate
         winner_votes = votes
-        
+
 #print to terminal
 print ()
 print("Election Results")
 print("-------------------------------------")
-print(f"Total Votes: {all_votes}\n")
+print(f"Total Votes: {all_votes}")
 print("-------------------------------------")
 for candidate, data in candidates.items():
     votes = data["votes"]
